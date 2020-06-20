@@ -1,7 +1,7 @@
 # WordsInSentence README
 
 ## Introduction
-The application reads a sentence from the console and returns the longest word and the shortest words in a sentence and their length.
+The application reads a sentence from the console and returns the longest and the shortest words in a sentence and their length.
 The purpose of the excercise is to prove I might have ever written a unit test in my life.
 
 ## Technologies
@@ -23,8 +23,27 @@ The purpose of the excercise is to prove I might have ever written a unit test i
 ## Known issues
 - The application is currently not optimised to find the shortest word when sentence contains adjoining separators: spaces, commas, dots and hyphens.
 
-## How to run tests
-- build in console
-- run tests
-
-
+## How to run the tests
+1. Download and install .NET Framework and .NET Core: https://dotnet.microsoft.com/download
+2. Check if the installation was successfull by typing in the command prompt (CMD, PowerShell, Bash):
+```sh
+$ dotnet test
+```
+3. Open UnitTestTask/WordsInSentence.Tests directory in the command prompt.
+4. Run selected tests by typing in command prompt:
+- For all tests
+```sh
+$ dotnet test
+```
+- For tests related to finding the longest word
+```sh
+$ dotnet test --filter Category=LongestWord
+```
+- For tests related to finding the shortest word
+```sh
+$ dotnet test --filter Category=ShortestWord
+```
+- For tests related to exceptions
+```sh
+$ dotnet test --filter Category=Exceptions
+```
