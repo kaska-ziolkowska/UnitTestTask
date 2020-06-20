@@ -6,7 +6,7 @@ namespace WordsInSentence.Tests
     public class SentenceShould
     {
         // Longest Word Tests
-
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWord()
         {
@@ -17,6 +17,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("joyfully", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWordLength()
         {
@@ -27,6 +28,7 @@ namespace WordsInSentence.Tests
             Assert.Equal(8, result.Length);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnFirstLongestWordWhenMoreThanOneLongest()
         {
@@ -37,6 +39,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("jumps", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnEmptyLongestWordWhenEmptySentence()
         {
@@ -47,6 +50,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnZeroLongestWordLengthWordWhenEmptySentence()
         {
@@ -57,6 +61,7 @@ namespace WordsInSentence.Tests
             Assert.Equal(0, result.Length);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWordContainingSpecialCharacters()
         {
@@ -67,6 +72,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("!@#$%^&*()_+={}[]:;'<>?/`~\"\\", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWordIngnoringMultipleAdjoiningSpaces()
         {
@@ -77,6 +83,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("jumped", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWordContainingNumbers()
         {
@@ -87,6 +94,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("T123he", result.Word);
         }
 
+        [Trait("Category", "Longest Word")]
         [Fact]
         public void ReturnLongestWordFromLongSentence()
         {
@@ -99,7 +107,7 @@ namespace WordsInSentence.Tests
 
 
         // Shortest Word Tests
-
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnShortestWord()
         {
@@ -110,6 +118,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("me", result.Word);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnShortestWordLength()
         {
@@ -120,6 +129,7 @@ namespace WordsInSentence.Tests
             Assert.Equal(1, result.Length);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnFirstShortestWordWhenMoreThanOneLongest()
         {
@@ -130,6 +140,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("The", result.Word);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnEmptyShortestWordWhenEmptySentence()
         {
@@ -140,6 +151,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("", result.Word);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnZeroShortestWordLengthWordWhenEmptySentence()
         {
@@ -150,6 +162,7 @@ namespace WordsInSentence.Tests
             Assert.Equal(0, result.Length);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnShortestWordContainingSpecialCharacters()
         {
@@ -160,6 +173,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("!@#$%^&*()_+={}[]:;'<>?/`~\"\\", result.Word);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnShortestWordContainingNumbers()
         {
@@ -170,6 +184,7 @@ namespace WordsInSentence.Tests
             Assert.Equal("2", result.Word);
         }
 
+        [Trait("Category", "Shortest Word")]
         [Fact]
         public void ReturnShortestWordIgnoringSpacesAtTheEnd()
         {
@@ -181,7 +196,7 @@ namespace WordsInSentence.Tests
         }
 
         // Null Exception Tests
-
+        [Trait("Category", "Exceptions")]
         [Fact]
         public void NotAllowNullInput()
         {
