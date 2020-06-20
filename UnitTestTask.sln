@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestTask", "UnitTestTask\UnitTestTask.csproj", "{55551484-ABC8-4038-9E58-9E83F49F01CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordsInSentence", "UnitTestTask\WordsInSentence.csproj", "{55551484-ABC8-4038-9E58-9E83F49F01CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsInSentence.Tests", "WordsInSentence.Tests\WordsInSentence.Tests.csproj", "{C43DAD49-2DA0-4221-997D-0C3BA3606FE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{55551484-ABC8-4038-9E58-9E83F49F01CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55551484-ABC8-4038-9E58-9E83F49F01CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55551484-ABC8-4038-9E58-9E83F49F01CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43DAD49-2DA0-4221-997D-0C3BA3606FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43DAD49-2DA0-4221-997D-0C3BA3606FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43DAD49-2DA0-4221-997D-0C3BA3606FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43DAD49-2DA0-4221-997D-0C3BA3606FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
