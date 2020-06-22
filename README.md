@@ -4,6 +4,13 @@
 The application reads a sentence from the console and returns the longest and the shortest words in a sentence and their length.
 The purpose of the excercise is to prove I might have ever written a unit test in my life.
 
+## Task
+Write a method or function in the major programming language of your choice that returns the longest word in a sentence and its length.  For example, "The cow jumped over the moon." should return "jumped" and "6". 
+1. Write unit tests, reworking code as needed
+2. Add a method that returns the shortest word and length with unit tests
+3. Create a README documenting any assumptions you made and including instructions on how to build and execute your tests.
+4. Share your code using GitHub or similar. 
+
 ## Technologies
 - C#
 - .NET Framework 4.6
